@@ -17,7 +17,7 @@ default = []
 reflect_documentation = []
 # Enables macro logic related to function reflection
 functions = []
-# Enables automatic reflect registration. Does nothing by itself, 
+# Enables automatic reflect registration. Does nothing by itself,
 # must select `auto_register_inventory` or `auto_register_static` to make it work.
 auto_register = []
 # Enables automatic reflection using inventory. Not supported on all platforms.
@@ -27,7 +27,7 @@ auto_register_static = ["auto_register", "dep:uuid"]
 
 [dependencies]
 bevy_macro_utils = { path = "../../bevy_macro_utils", version = "0.20.0-dev" }
-indexmap = "2.0"
+indexmap = "2.14"
 proc-macro2 = "1.0"
 quote = "1.0"
 syn = { version = "3", features = ["full", "extra-traits"] }
